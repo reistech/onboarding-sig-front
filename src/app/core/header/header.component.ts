@@ -10,5 +10,9 @@ export class HeaderComponent {
         private router:Router) {
             
         }
-    )
+        navbarOpen = false; 
+
+        toggleNavbar () { 
+          this.navbarOpen =! this.navbarOpen; 
+        } 
 }

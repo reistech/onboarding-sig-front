@@ -5,13 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
     {
         path: '',
-        pathMatch: 'full',
-        redirectTo: 'home',
-    }, 
-    { 
-        path: '**', 
-        redirectTo: 'not-found'
-    }  
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    {
+        path: '**',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    }
 ];
 
 @NgModule({
