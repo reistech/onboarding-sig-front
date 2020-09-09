@@ -5,17 +5,19 @@ import { HeaderComponent } from './core/header/header.component';
 import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { EmpresaModule } from './empresa/empresa.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    CoreModule,
+    EmpresaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
