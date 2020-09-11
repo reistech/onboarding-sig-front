@@ -1,0 +1,22 @@
+<div class="main-content">
+    <div class="container">
+        <div class="main-content-header mb-4">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 *ngIf="+id == 0">Cadastro de Empresa</h2>
+                    <h2 *ngIf="+id > 0 && !readonly">Edição de Empresa</h2>
+                    <h2 *ngIf="+id > 0 && readonly">Visualização de Empresa</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            data
+        </div>
+
+        <div class="pull-right">
+            <button type="button" class="btn btn-outline-primary" id="btn-voltar"
+                [routerLink]="['/empresa']">Voltar</button>
+            <button type="button" (click)="salvar()" class="btn btn-success" id="btn-salvar">Salvar</button>
+        </div>
+    </div>
+</div>
